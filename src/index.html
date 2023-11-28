@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS with Parcel</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-300">
+    <nav class="flex justify-between bg-gray-900 text-white w-screen">
+      <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+        <a class="text-3xl font-bold font-heading" href="#">
+          <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+          <img class="h-9" src="./img/logo.png" alt="logo">
+        </a>
+        
+
+        <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+          <li><a class="hover:text-gray-200" href="./index.html">Inici</a></li>
+          <li><a class="hover:text-gray-200" href="./products.html">Productes</a></li>
+          <li><a class="hover:text-gray-200" href="./aboutus.html">Sobre nosaltres</a></li>
+        </ul>
+
+
+          <a class="flex items-center hover:text-gray-200" href="./carro.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            <span class="flex absolute -mt-5 ml-4">
+              <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                </span>
+              </span>
+          </a>
+          
+        </div>
+      </div>
+
+      <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </a>
+    
+    </nav>
+    <div class="py-8 md:py-12 px-4">
+      <h1 class="text-3xl md:text-4xl mb-6 font-bold text-center">Crèdits i Referències</h1>
+    
+      <div class="p-4 bg-white shadow-lg rounded-lg">
+        <p class="mb-4"><b>Per crear aquest lloc web, hem utilitzat diversos recursos:</b></p>
+    
+        <div class="mb-6">
+          <h2 class="text-xl md:text-2xl mb-2 font-bold border-b-2">Imatges</h2>
+          <p>He fet servir una imatge d'exemple per als productes, que va ser extreta de:</p>
+          <a href="https://unsplash.com/photos/space-gray-apple-watch-with-black-sports-band-hbTKIbuMmBI" class="text-teal-600 pl-3 block" target="_blank" rel="noopener noreferrer">- Unsplash</a>
+        </div>
+    
+        <div>
+          <h2 class="text-xl md:text-2xl mb-2 font-bold border-b-2">Components i Idees</h2>
+          <p class="mb-4"><b>Per dissenyar la barra de navegació, he utilitzat parcialment un component, encara que hem aplicat certes modificacions:</b></p>
+          <a href="https://freefrontend.com/tailwind-navbars" class="text-teal-600 pl-3 block" target="_blank" rel="noopener noreferrer">- FreeFrontend.com</a>
+          <p class="mb-4">A més, hem obtingut inspiració de:</p>
+          <a href="https://flowbite.com/docs/components/card" class="text-teal-600 pl-3 block" target="_blank" rel="noopener noreferrer">- Flowbite.com</a>
+        </div>
+      </div>
+    </div>
+    
+
+    
+  </body>
+</html>
+

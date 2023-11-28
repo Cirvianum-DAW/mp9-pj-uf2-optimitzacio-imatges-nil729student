@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS with Parcel</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-300">
+    <nav class="flex justify-between bg-gray-900 text-white">
+      <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+        <a class="text-3xl font-bold font-heading" href="#">
+          <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+          NilProducts
+        </a>
+        <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+          <li><a class="hover:text-gray-200" href="./index.html">Inici</a></li>
+          <li><a class="hover:text-gray-200" href="./products.html">Productes</a></li>
+          <li><a class="hover:text-gray-200" href="./aboutus.html">Sobre nosaltres</a></li>
+        </ul>
+
+          <a class="flex items-center hover:text-gray-200" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            <span class="flex absolute -mt-5 ml-4">
+              <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                </span>
+              </span>
+          </a>
+          
+        </div>
+      </div>
+
+      <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </a>
+    
+    </nav>
+
+ 
+    <h1 class="text-3xl font-bold text-center mt-4 mb-8">Carro de compra</h1>
+    <div class=" md:grid-cols-2 lg:grid-cols-3 gap-8 p-20">
+
+        <div class="flex flex-row mb-4 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-slate-500">
+            <a href="/src/product.html" class="flex">
+            <img src="./img/coca.jpg" alt="Product" class="w-1/6 object-cover rounded-l-xl" />
+        
+            <div class="p-4 w-1/2">
+                <h2 class="text-lg font-bold text-black mb-2">Coca-cola</h2>
+                <p class="text-sm text-gray-600 mb-2">Subtítul del producte</p>
+                <p class="text-sm text-gray-600 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt, facere saepe atque eos minus laborum quibusdam consequatur incidunt, ipsum accusantium perferendis tempora. Autem itaque unde consequatur doloribus expedita iusto.</p>
+        
+                <div class="flex items-center justify-between">
+                <p class="text-lg font-semibold text-black">$2</p>
+                <div class="flex items-center">
+                    <button class="bg-blue-500 text-white px-3 py-1 rounded-md">+</button>
+                    <span class="mx-2">2</span>
+                    <button class="bg-red-500 text-white px-3 py-1 rounded-md">-</button>
+                </div>
+                </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="flex flex-row shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-slate-500">
+            <a href="/src/product.html" class="flex">
+            <img src="./img/coca.jpg" alt="Product" class="w-1/6 object-cover rounded-l-xl" />
+        
+            <div class="p-4 w-1/2">
+                <h2 class="text-lg font-bold text-black mb-2">Coca-cola</h2>
+                <p class="text-sm text-gray-600 mb-2">Subtítul del producte</p>
+                <p class="text-sm text-gray-600 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt, facere saepe atque eos minus laborum quibusdam consequatur incidunt, ipsum accusantium perferendis tempora. Autem itaque unde consequatur doloribus expedita iusto.</p>
+        
+                <div class="flex items-center justify-between">
+                <p class="text-lg font-semibold text-black">$2</p>
+                <div class="flex items-center">
+                    <button class="bg-blue-500 text-white px-3 py-1 rounded-md">+</button>
+                    <span class="mx-2">2</span>
+                    <button class="bg-red-500 text-white px-3 py-1 rounded-md">-</button>
+                </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="flex flex-row  p-20">
+        <div class="flex flex-col">
+            <p class="text-lg font-semibold text-black">Total Productes: </p>
+            <p class="text-lg font-semibold text-black">Enviament: </p>
+            <p class="text-lg font-semibold text-black">Total: </p>
+            <button class=" border border-sky-100 bg-slate-800 text-white px-3 py-1 rounded-md flex justify-center m-5 ">Comprar</button>
+        </div>
+        <div class="flex flex-col">
+            <p class="text-lg font-semibold text-black"> 4</p>
+            <p class="text-lg font-semibold text-black">$4</p>
+            <p class="text-lg font-semibold text-black">$8</p>
+        </div>
+    </div>
+
+
+
+
+    
+  </body>
+</html>
+

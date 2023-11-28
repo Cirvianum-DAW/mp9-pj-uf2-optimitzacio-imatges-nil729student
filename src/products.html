@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS with Parcel</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-300">
+    <nav class="flex justify-between bg-gray-900 text-white">
+      <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+        <a class="text-3xl font-bold font-heading" href="#">
+          <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+          <img class="h-9" src="./img/logo.png" alt="logo">
+        </a>
+        <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+          <li><a class="hover:text-gray-200" href="./index.html">Inici</a></li>
+          <li><a class="hover:text-gray-200" href="./products.html">Productes</a></li>
+          <li><a class="hover:text-gray-200" href="./aboutus.html">Sobre nosaltres</a></li>
+        </ul>
+
+          <a class="flex items-center hover:text-gray-200" href="./carro.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            <span class="flex absolute -mt-5 ml-4">
+              <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                </span>
+              </span>
+          </a>
+          
+        </div>
+      </div>
+
+      <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </a>
+    
+    </nav>
+
+ 
+    <h1 class="text-3xl font-bold text-center mt-4 mb-8">Tots els productes</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 p-10 justify-items-center">
+      
+      <div class="w-72 pt-5 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="/src/product.html" >
+          <img src="./img/coca.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+          <div class="px-4 py-3">
+            <p class="text-lg font-bold text-black truncate capitalize">Coca-cola</p>
+            <div class="flex items-center">
+              <p class="text-lg font-semibold text-black cursor-auto my-3">$2</p>
+              <button class="ml-auto bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full">
+                mostra
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="w-72 pt-5 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="/src/product.html">
+          <img src="./img/coca.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+          <div class="px-4 py-3">
+            <p class="text-lg font-bold text-black truncate capitalize">Coca-cola</p>
+            <div class="flex items-center">
+              <p class="text-lg font-semibold text-black cursor-auto my-3">$2</p>
+              <button class="ml-auto bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full">
+                mostra
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="w-72 pt-5 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="/src/product.html">
+          <img src="./img/coca.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+          <div class="px-4 py-3">
+            <p class="text-lg font-bold text-black truncate capitalize">Coca-cola</p>
+            <div class="flex items-center">
+              <p class="text-lg font-semibold text-black cursor-auto my-3">$2</p>
+              <button class="ml-auto bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full">
+                mostra
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="w-72 pt-5 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="/src/product.html">
+          <img src="./img/coca.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+          <div class="px-4 py-3">
+            <p class="text-lg font-bold text-black truncate capitalize">Coca-cola</p>
+            <div class="flex items-center">
+              <p class="text-lg font-semibold text-black cursor-auto my-3">$2</p>
+              <button class="ml-auto bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full">
+                mostra
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="w-72 pt-5 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="/src/product.html">
+          <img src="./img/coca.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+          <div class="px-4 py-3">
+            <p class="text-lg font-bold text-black truncate capitalize">Coca-cola</p>
+            <div class="flex items-center">
+              <p class="text-lg font-semibold text-black cursor-auto my-3">$2</p>
+              <button class="ml-auto bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full">
+                mostra
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="w-72 pt-5 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+        <a href="/src/product.html">
+          <img src="./img/coca.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+          <div class="px-4 py-3">
+            <p class="text-lg font-bold text-black truncate capitalize">Coca-cola</p>
+            <div class="flex items-center">
+              <p class="text-lg font-semibold text-black cursor-auto my-3">$2</p>
+              <button class="ml-auto bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full">
+                mostra
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    
+  </body>
+</html>
+
